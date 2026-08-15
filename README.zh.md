@@ -24,6 +24,8 @@ npx @deepseek-ai/dsh web
 
 ### 从源码运行
 
+在 Linux 上，`pnpm install` 会从源码编译 PTY 后端，因此除 Node.js 与 pnpm 之外还需要 C++ 编译器、`make` 与 `python3`——Debian/Ubuntu 上执行 `sudo apt-get install -y g++ make python3`，Fedora/RHEL 上执行 `sudo dnf install -y gcc-c++ make python3`。macOS 与 Windows 安装已发布的预构建二进制，无需编译器。[开发指南](docs/development.md#prerequisites)列出了全部前置条件。
+
 如需从仓库源码运行：
 
 ```sh
