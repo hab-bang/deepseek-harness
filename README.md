@@ -24,6 +24,8 @@ The command starts the Web UI, served at `http://127.0.0.1:3080` by default. See
 
 ### Run from source
 
+Linux compiles the PTY backend during `pnpm install`, so it needs a C++ compiler, `make`, and `python3` alongside Node.js and pnpm — `sudo apt-get install -y g++ make python3` on Debian/Ubuntu, `sudo dnf install -y gcc-c++ make python3` on Fedora/RHEL. macOS and Windows install a published prebuilt binding and need no compiler. The [development guide](docs/development.md#prerequisites) lists every prerequisite.
+
 To run from a repository checkout:
 
 ```sh
